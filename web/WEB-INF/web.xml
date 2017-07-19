@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <welcome-file-list>
+        <welcome-file>restMenuServlet</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>foodTypeServlet</servlet-name>
+        <servlet-class>com.rest.servlet.FoodTypeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>foodTypeServlet</servlet-name>
+        <url-pattern>/foodType</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>dinnerTableServlet</servlet-name>
+        <servlet-class>com.rest.servlet.DinnerTableServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dinnerTableServlet</servlet-name>
+        <url-pattern>/dinnerTable</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>food</servlet-name>
+        <servlet-class>com.rest.servlet.FoodServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>food</servlet-name>
+        <url-pattern>/food</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>restMenuServlet</servlet-name>
+        <servlet-class>com.rest.servlet.RestMenuServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>restMenuServlet</servlet-name>
+        <url-pattern>/restMenuServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
